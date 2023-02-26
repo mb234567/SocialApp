@@ -1,0 +1,267 @@
+<template name="MP"> 
+    <div class="main">
+        <div class="left">
+         <div class="profile">
+            <div class="profile-photo"></div> 
+            <div class="handle">
+                <h3>Mario B</h3> 
+                <p class="text-muted">
+                    @mario123
+                </p>
+            </div>
+         </div>
+         <div class="sidebar">
+            <a class="menu-item active">
+                <span><i id="ic" class="fa-solid fa-house"></i></span> <h3>Home</h3> 
+            </a>  
+            <a class="menu-item">
+                <span><i id="ic" class="fa-solid fa-compass"></i></span> <h3>Explore</h3> 
+            </a>  
+            <a class="menu-item js-notifications" id="notifications">
+                <span><i id="ic" class="fa-solid fa-bell"></i> <small class="notification-count1">9+</small></span> <h3>Notifications</h3> 
+              </a>
+            <a class="menu-item" id="message-notifications">
+                <span><i id="ic" class="fa-regular fa-message"></i> <small class="notification-count2">10</small></span> <h3>Messages</h3>
+            </a>  
+            <a class="menu-item">
+                <span><i id="ic" class="fa-regular fa-bookmark"></i></span> <h3>Bookmarks</h3> 
+            </a> 
+            <a class="menu-item js-theme">
+                <span><i id="ic" class="fa-solid fa-palette"></i></span> <h3>Theme</h3>   
+            </a> 
+            <a class="menu-item">
+                 <span><i id="ic" class="fa-solid fa-gear"></i></span> <h3>Settings</h3>  
+            </a>   
+         </div> 
+         <button id="create-postb">Create Post</button> 
+        </div> 
+        <div class="middle"> 
+            <h4 id="RecentS">Most Recent Stories</h4>
+          <div class="stories">
+            <div class="story">
+                <div class="storypicture1"></div> 
+                <p class="name">Your Story</p>
+            </div> 
+            <div class="story">
+                <div class="storypicture2"></div> 
+                <p class="name">Paul</p>
+            </div> 
+            <div class="story">
+                <div class="storypicture3"></div> 
+                <p class="name">Keagan Oxley</p>
+            </div> 
+            <div class="story">
+                <div class="storypicture4"></div> 
+                <p class="name">Dwayne B</p>
+            </div> 
+            <div class="story">
+                <div class="storypicture5"></div> 
+                <p class="name">Davesha Skeete</p>
+            </div> 
+            <div class="story">
+                <div class="storypicture6"></div> 
+                <p class="name">Amari H</p>
+            </div>
+          </div> 
+          <form class="NewPost">
+            <div class="cp-ProfilePic"></div> 
+            <input type="text" id="cp-search" placeholder="What's On Your Mind Mario?"> 
+            <input type="button" value="Post" id="cpPost-but">
+          </form>  
+          <div class="created-Post">
+            <!-- <div class="P-Info">
+            <p>New Post</p>
+            <i class="fa-solid fa-trash"></i> 
+        </div> -->
+          </div>
+          <div class="feeds">
+          <div class="feed1">
+            <div class="head">
+                <div class="user">
+                    <div class="feedprofile-photo"></div> 
+                    <div class="info">
+                        <h3>Ella Ballinska</h3> 
+                        <small>Dubai, 15 Minutes Ago</small>
+                    </div>  
+                </div> 
+                <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+            </div> 
+            
+            <div class="feedmain-photo"></div> 
+            <div class="action-buttons">
+                <div class="interactions">
+                    <span> <i class="fa-regular fa-heart"></i></span> 
+                     <span><i class="fa-regular fa-comment"></i></span> 
+                     <span><i class="fa-solid fa-share-nodes"></i></span> 
+                  </div> 
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark" id="bm"></i></span>
+                  </div>
+                   
+            </div> 
+            <div class="liked-by">
+                <span><div class="liked-byphoto1"></div></span> 
+                <span><div class="liked-byphoto2"></div></span> 
+                <span><div class="liked-byphoto3"></div></span> 
+                <p>Liked by <b>DwayneB</b> and <b>283 others</b></p>
+            </div> 
+            <div class="caption">
+                <p><b>Ella Ballinska</b> Fly Times In Dubai</p>
+            </div> 
+            <div class="comments">view all 20 comments</div>
+          </div>  
+          <div class="feed2">
+            <div class="head">
+                <div class="user">
+                    <div class="feedprofile-photo2"></div> 
+                    <div class="info">
+                        <h3>Cristiano Ronaldo</h3> 
+                        <small>Qatar, 1 Hour Ago</small>
+                    </div>  
+                </div> 
+                <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+            </div> 
+            
+            <div class="feedmain-photo2"></div> 
+            <div class="action-buttons">
+                <div class="interactions">
+                    <span> <i class="fa-regular fa-heart"></i></span> 
+                     <span><i class="fa-regular fa-comment"></i></span> 
+                     <span><i class="fa-solid fa-share-nodes"></i></span> 
+                  </div> 
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark" id="bm"></i></span>
+                  </div>
+                   
+            </div> 
+            <div class="liked-by">
+                <span><div class="liked-byphoto1"></div></span> 
+                <span><div class="liked-byphoto2"></div></span> 
+                <span><div class="liked-byphoto3"></div></span> 
+                <p>Liked by <b>DwayneB</b> and <b>283 others</b></p>
+            </div> 
+            <div class="caption">
+                <p><b>Cristiano Ronaldo</b> For The Portugese People!</p>
+            </div> 
+            <div class="comments">view all 100,307 comments</div>
+          </div>  
+          <div class="feed3">
+            <div class="head">
+                <div class="user">
+                    <div class="feedprofile-photo3"></div> 
+                    <div class="info">
+                        <h3>ex.plorewithd</h3> 
+                        <small>My Bedroom, 10 Minutes Ago</small>
+                    </div>  
+                </div> 
+                <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+            </div> 
+            
+            <div class="feedmain-photo3"></div> 
+            <div class="action-buttons">
+                <div class="interactions">
+                    <span> <i class="fa-regular fa-heart"></i></span> 
+                     <span><i class="fa-regular fa-comment"></i></span> 
+                     <span><i class="fa-solid fa-share-nodes"></i></span> 
+                  </div> 
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark" id="bm"></i></span>
+                  </div>
+                   
+            </div> 
+            <div class="liked-by">
+                <span><div class="liked-byphoto1"></div></span> 
+                <span><div class="liked-byphoto2"></div></span> 
+                <span><div class="liked-byphoto3"></div></span> 
+                <p>Liked by <b>_mind.over.matter24</b> and <b>20 others</b></p>
+            </div> 
+            <div class="caption">
+                <p><b>ex.plorewithd</b> Watch NGE Guys!!!!!</p>
+            </div> 
+            <div class="comments">view all 10 comments</div>
+          </div> 
+          <div class="feed4">
+            <div class="head">
+                <div class="user">
+                    <div class="feedprofile-photo4"></div> 
+                    <div class="info">
+                        <h3>Keagan Oxley</h3> 
+                        <small>Somewhere On The Road, 1 Hour Ago</small>
+                    </div>  
+                </div> 
+                <span class="edit">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+            </div> 
+            
+            <div class="feedmain-photo4"></div> 
+            <div class="action-buttons">
+                <div class="interactions">
+                    <span> <i class="fa-regular fa-heart"></i></span> 
+                     <span><i class="fa-regular fa-comment"></i></span> 
+                     <span><i class="fa-solid fa-share-nodes"></i></span> 
+                  </div> 
+                  <div class="bookmark">
+                    <span><i class="fa-regular fa-bookmark" id="bm"></i></span>
+                  </div>
+                   
+            </div> 
+            <div class="liked-by">
+                <span><div class="liked-byphoto1"></div></span> 
+                <span><div class="liked-byphoto2"></div></span> 
+                <span><div class="liked-byphoto3"></div></span> 
+                <p>Liked by <b>DwayneB</b> and <b>2 others</b></p>
+            </div> 
+            <div class="caption">
+                <p><b>Keagan Oxley</b> Open Your Doors To The Lord As Well As Us</p>
+            </div> 
+            <div class="comments">view all 10 comments</div>
+          </div> 
+          </div>
+        </div> 
+        <div class="right">
+            <div class="right-sidebar">
+               <div class="messages">
+                <div class="heading">
+                    <h4>Messages</h4> <i class="fa-regular fa-pen-to-square"></i>
+                </div> 
+                <div class="Rsidebar-searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                    <input type="search" placeholder="Seach Messages" id="message-search">
+                </div> 
+                <div class="category">
+                    <h6 class="active">Primary</h6> 
+                    <h6 class="active">General</h6> 
+                    <h6 class="message-requests">Requests(7)</h6>
+                </div> 
+                <!-- <div class="message">
+                    <div class="r-sidebar-profilephoto"></div>
+                </div> 
+                <div class="message-body">
+                    <h5>John Cena</h5> 
+                    <p>You can't see me</p>
+                </div>
+               </div> 
+
+               <div class="friend-requests">
+                <h4>Requests</h4> 
+                <div class="requests">
+                    <div class="request-info">
+                        <div class="request-profile-photo"></div>
+                    </div> 
+                    <h5>John Cena Pt.2</h5> 
+                    <p>8 mutual friends</p>
+                </div> -->
+               </div>
+            </div>  
+        </div>
+    </div>
+  <script src="MainPage.js" defer></script> 
+  
+</template>

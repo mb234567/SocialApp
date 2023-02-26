@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap');
+
+/* :root {
+  --color-white : hsl(252, 30%, 100%);
+  --color-light : hsl(252, 30%, 95%); 
+  --color-primary : hsl(252, 75%, 60%); 
+  --color-secondary: hsl(252, 100%, 90%); 
+  --color-success : hsl(120, 95%, 65%); 
+  --color-danger : hsl(0, 95%, 65%); 
+  --color-dark : hsl(252, 30%, 17%); 
+  --color-black : hsl(252, 30%, 10%); 
+
+  --border-radius: 45px; 
+  --card-border-radius: 17px; 
+  --btn-padding: 1rem,1.5rem; 
+  --search-padding:12px,10px: 
+  --card-padding:1rem; 
+
+} */
+
+/* *::before,*::after {
+margin: 0; 
+padding: 0; 
+outline: 0; 
+box-sizing: border-box;
+} */
+
+body { 
+  padding: 0; 
+  margin: 0;
+  font-family: 'Poppins', sans-serif; 
+  color: black;
+  background-image: linear-gradient(white,darkmagenta);
+} 
+
+.nav { 
+  top: 0;
+ left: 0;  
+ right: 0;
+ height: 130px; 
+ display: flex; 
+ flex-direction: row; 
+ align-items: center; 
+ justify-content: space-between; 
+ position: absolute; 
+ gap: 2rem; 
+ color: white;
+ background-image: linear-gradient(darkmagenta,pink);
+}  
+.err {
+  border: 2px solid red;
+}
+
+#search-icon {
+  cursor: pointer;
+}
+
+.create {
+  display: flex; 
+  flex-direction: row; 
+  gap: 1.5rem; 
+}
+
+#btn1 {
+  height: 40px; 
+  width: 120px; 
+  margin-top: 40px;
+  cursor: pointer; 
+  font-size: 15px; 
+  background-color: darkmagenta;
+  color: white; 
+  border-radius: 40px;
+} 
+
+#btn1 :hover {
+  box-shadow: 0 0 40px darkmagenta;
+}  
+.profile-picture {
+  height: 120px; 
+  width: 140px; 
+  border: 2px solid black; 
+  background-image: url(https://w0.peakpx.com/wallpaper/983/774/HD-wallpaper-tokyoghoul-kaneki-ken-kanekiken-whitehair-animeboy-boyfriend-sasakihaise-aestethic-fanart-icon-kaneki-facialexpression-redraw-tokyoghoul-husbando-dark-minimalist-profile-anime-badass.jpg); 
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat;  
+} 
+
+
+/* .nav {
+  width: 100%; 
+  background: var(--color-white); 
+  padding: 0.7rem,0; 
+  position: fixed; 
+  display: flex; 
+  align-items: center; 
+  justify-content: flex; 
+  gap: 1.5rem;
+}  */
+
+.search-bar {   
+  margin-left: 70px; 
+  color: black; 
+  border-radius: 25px;  
+  background-color: white;
+  
+} 
+#search {
+  margin-left: 0.5rem; 
+  width: 500px; 
+  border: none;
+  border-radius: 28px;
+} 
+
+.main { 
+  margin-top: 150px;
+  display: grid; 
+  grid-template-columns: 18vw auto 20vw; 
+  gap: 2rem;
+  
+} 
+
+.profile { 
+  height: 220px; 
+  width: 200px;
+  background-color: white; 
+  color: black; 
+  font-weight: 600;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 23px;
+}  
+.profile-photo {
+  height: 80px; 
+  width: 100px; 
+  background-image: url(https://w0.peakpx.com/wallpaper/983/774/HD-wallpaper-tokyoghoul-kaneki-ken-kanekiken-whitehair-animeboy-boyfriend-sasakihaise-aestethic-fanart-icon-kaneki-facialexpression-redraw-tokyoghoul-husbando-dark-minimalist-profile-anime-badass.jpg);
+  background-position: center; 
+  background-size: cover;
+} 
+
+.profile-photon {
+  height: 50px; 
+  width: 55px; 
+  border: black; 
+  border-radius: 70px; 
+  background-image: url(https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?cs=srgb&dl=pexels-suliman-sallehi-1704488.jpg&fm=jpg); 
+  background-position: center; 
+  background-size: cover;
+} 
+
+.profile-photon2 {
+  height: 50px; 
+  width: 55px; 
+  border: black; 
+  border-radius: 70px; 
+  background-image: url(https://newprofilepic2.photo-cdn.net//assets/images/article/profile.jpg); 
+  background-position: center; 
+  background-size: cover;
+} 
+
+.profile-photon3 {
+  height: 50px; 
+  width: 55px; 
+  border: black; 
+  border-radius: 70px; 
+  background-image: url(); 
+  background-position: center; 
+  background-size: cover;
+} 
+
+.profile-photon4{
+  height: 50px; 
+  width: 55px; 
+  border: black; 
+  border-radius: 70px; 
+  background-image: url(https://img-9gag-fun.9cache.com/photo/aB0m0r2_460s.jpg); 
+  background-position: center; 
+  background-size: cover;
+} 
+#create-postb {
+  height: 55px; 
+  width: 200px; 
+  border-radius: 50px; 
+  background-image: linear-gradient(pink,magenta);
+  color: white;
+  font-weight: 500;
+} 
+
+
+
+
+
+
+
+.sidebar { 
+  margin-top: 50px;
+  padding-top: 50px; 
+  background-color: white; 
+  border-radius: 22px; 
+} 
+
+.menu-item {
+  display: flex; 
+  align-items: center; 
+  height: 4rem; 
+  cursor: pointer; 
+  transition: all 300ms ease; 
+  position: relative; 
+  color: black;
+} 
+.menu-item :hover {
+  background: grey;
+}  
+
+#ic {
+  /* font-size: 14px;  */
+  padding-left: 2rem; 
+  position: relative;  
+  padding-bottom: 5px;
+}
+
+.notification-count1 {
+  background: red; 
+  color: white; 
+  font-size: 10px;   
+  padding-left: 5px;
+  width: 22px;
+  border-radius: 70px;  
+  position: absolute; 
+  top: 8px; 
+  
+} 
+
+.notification-count2 {
+  background: red; 
+  color: white; 
+  font-size: 10px; 
+  width: 22px; 
+  padding-left: 6px;
+  border-radius: 70px;  
+  position: absolute; 
+  top: 6px;
+} 
+
+.sidebar h3 {
+  margin-left: 30px; 
+  font-size: 15px;
+} 
+
+.menu-item .active {
+  background: lightgrey;
+}  
+.RcentS { 
+  box-shadow: 25px black;
+
+}
+
+.stories {
+  display: flex; 
+  flex-direction: row; 
+  gap: 1rem; 
+  height: 200px;
+} 
+
+.storypicture1 {
+  height: 160px; 
+  width: 80px; 
+  background-image: url(https://media4.giphy.com/media/enrJj5p6lJD9WoFegD/giphy.gif?cid=ecf05e47eabugvzjgvakg2d0sbyneualv30kc27fy807rg40&rid=giphy.gif&ct=g); 
+  background-position: center;  
+  background-size: cover;
+  border-radius: 22px;
+  
+} 
+
+.storypicture2 {
+  height: 160px; 
+  width: 80px; 
+  background-image: url(https://media.glamourmagazine.co.uk/photos/6242f09bd75562efedd23497/4:3/w_1920,h_1440,c_limit/YOU%204%20290322%20YOU_307_Unit_00441R_SQ.jpg); 
+  background-position: center; 
+  background-size: cover; 
+  border-radius: 14px;
+} 
+
+.storypicture3 {
+  height: 160px; 
+  width: 80px; 
+  background-image: url(https://media0.giphy.com/media/yNF0XKi2ZLuow/giphy.gif?cid=ecf05e47gx0z4q9va8ecnc8j4w922sx0af28xd02prcyootx&rid=giphy.gif&ct=g); 
+  background-position: center; 
+  background-size: cover;
+  border-radius: 14px;
+} 
+.storypicture4 {
+  height: 160px; 
+  width: 80px; 
+  background-image: url(https://img-9gag-fun.9cache.com/photo/aB0m0r2_460s.jpg); 
+  background-position: center; 
+  background-size: cover;
+  border-radius: 14px;
+} 
+.storypicture5 {
+  height: 160px; 
+  width: 80px; 
+  background-image: url(https://media0.giphy.com/media/f3IcBYfjyZto1cf6M2/giphy.gif?cid=ecf05e474h6nt9ynfzdnf6v95pw1puvziqz4afq0h7okvkuy&rid=giphy.gif&ct=g);
+  background-position: center; 
+  background-size: cover;
+  border-radius: 14px;
+} 
+.storypicture6 {
+  height: 160px; 
+  width: 80px; 
+  background-image: url(https://media3.giphy.com/media/lT5rSXtDZwIM/giphy.gif?cid=ecf05e47917kws89og5y4d2kv2ko8sw4wxj1xbq1i8zxfloq&rid=giphy.gif&ct=g);
+  background-position: center; 
+  background-size: cover;
+  border-radius: 14px;
+}  
+
+.NewPost {
+  margin-top: 40px; 
+  display: flex; 
+  width: 100%; 
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: white; 
+  padding-left: 5px; 
+  padding-right: 5px; 
+  border-radius: 27px;
+} 
+.cp-ProfilePic {
+  height: 50px; 
+  width: 55px; 
+  border-radius: 70px; 
+  background-image: url(https://w0.peakpx.com/wallpaper/983/774/HD-wallpaper-tokyoghoul-kaneki-ken-kanekiken-whitehair-animeboy-boyfriend-sasakihaise-aestethic-fanart-icon-kaneki-facialexpression-redraw-tokyoghoul-husbando-dark-minimalist-profile-anime-badass.jpg); 
+  background-position: center; 
+  background-size: cover;
+} 
+#cp-search {
+  width: 400px; 
+  border-radius: 22px; 
+  border: none;
+} 
+#cpPost-but {
+  height: 40px; 
+  width: 90px; 
+  border-radius: 22px; 
+  color: white; 
+  background-color: blueviolet;
+}  
+.created-Post {
+  margin-top: 20px;
+}
+.P-Info {
+  padding-left: 10px; 
+  padding-right: 10px;
+  height: 40px; 
+  width: 100%; 
+  background-color: white; 
+  border-radius: 22px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+.feeds {
+  margin-top: 40px; 
+  color: black;
+}  
+.feed1 {
+  background-image: linear-gradient(white,darkmagenta);
+  border-radius: 22px; 
+ padding-left: 10px; 
+ padding-right: 10px; 
+ padding-top: 10px; 
+ padding-bottom: 10px;
+} 
+.head {
+  display: flex; 
+  justify-content: space-between;
+}
+.feedprofile-photo {
+  height: 30px; 
+  width: 30px; 
+  border-radius: 70px;
+  background-image: url(https://www.azyaamode.com/files/stories/group0/original/CARTIER_-_ELLA_BALINSKA.jpg); 
+  background-size: cover; 
+  background-position: center;
+} 
+.feedmain-photo {
+  height: 300px; 
+  width: 550px; 
+  border-radius: 15px;
+  background-image: url(https://wwd.com/wp-content/uploads/2019/11/ella-balinska-2019-002.jpg); 
+  background-position: center; 
+  background-size: cover;
+} 
+
+.action-buttons {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  font-size: 25px
+}  
+.liked-by {
+  display: flex; 
+} 
+
+.caption {
+  color: white;
+}
+
+.liked-byphoto1 { 
+  height: 20px; 
+  width: 25px;   
+  border: 1px solid white;
+  border-radius: 50px;
+  background-image: url(https://shotkit.com/wp-content/uploads/2021/06/cool-profile-pic-matheus-ferrero.jpeg); 
+  background-position: center; 
+  background-size: cover;
+} 
+
+.liked-byphoto2 { 
+  height: 20px; 
+  width: 25px; 
+  margin-left: -0.6rem; 
+  border: 1px solid white;
+  border-radius: 50px;
+  background-image: url(https://pixlr.com/studio/template/6264364c-b8cc-4f4f-92d8-28c69a2b756w/thumbnail.webp); 
+  background-position: center; 
+  background-size: cover;
+} 
+
+.liked-byphoto3 { 
+  height: 20px; 
+  width: 25px; 
+  margin-left: -0.6rem; 
+  border: 1px solid white;
+  border-radius: 50px;
+  background-image: url(https://m.media-amazon.com/images/M/MV5BMTkyYWJiYTktZDlkMC00ZmZjLWI4MjQtYmQwNzg1OGQ3NDJhXkEyXkFqcGdeQXVyMjA0MjY3MzI@._V1_.jpg); 
+  background-position: center; 
+  background-size: cover;
+} 
+.comments {
+  color: darkgrey; 
+  cursor: pointer;
+} 
+
+.feed2 {
+  margin-top: 30px; 
+  background-image: linear-gradient(white,darkmagenta);
+  border-radius: 22px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  padding-top: 10px; 
+  padding-bottom: 10px;
+} 
+.feedprofile-photo2 {
+  height: 30px; 
+  width: 30px; 
+  border-radius: 70px;
+  background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/221124174035-cristiano-ronaldo-world-cup.jpg?c=original); 
+  background-size: cover; 
+  background-position: center;
+} 
+.feedmain-photo2 {
+  height: 300px; 
+  width: 550px; 
+  border-radius: 15px;
+  background-image: url(https://www.ctvnews.ca/content/dam/ctvnews/en/images/2022/11/24/cristiano-ronaldo-1-6167275-1669311998745.jpg); 
+  background-position: center; 
+  background-size: cover;
+} 
+.feed3 {
+  margin-top: 30px; 
+  background-image: linear-gradient(white,darkmagenta);
+  border-radius: 22px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  padding-top: 10px; 
+  padding-bottom: 10px;
+} 
+.feedprofile-photo3 {
+  height: 30px; 
+  width: 30px; 
+  border-radius: 70px;
+  background-image: url(data:image/jpeg;base64,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); 
+  background-size: cover; 
+  background-position: center;
+} 
+.feedmain-photo3 {
+  height: 300px; 
+  width: 550px; 
+  border-radius: 15px;
+  background-image: url(https://media1.giphy.com/media/HPmQAhmTutLxK/giphy.gif?cid=ecf05e47m0ixu644xolcuqovcvufvlah185s8gqz1r37o175&rid=giphy.gif&ct=g); 
+  background-position: center; 
+  background-size: cover;
+}  
+.feed4 {
+  margin-top: 30px; 
+  background-image: linear-gradient(white,darkmagenta);
+  border-radius: 22px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  padding-top: 10px; 
+  padding-bottom: 10px;
+} 
+.feedprofile-photo4 {
+  height: 30px; 
+  width: 30px; 
+  border-radius: 70px;
+  background-image: url(https://www.ctsbooks.org/wp-content/uploads/2018/12/c298-20answers-jehovahs-witnesses.jpg);
+  background-size: cover; 
+  background-position: center;
+} 
+.feedmain-photo4 {
+  height: 300px; 
+  width: 550px; 
+  border-radius: 15px;
+  background-image: url(https://oilcitynews.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2022/08/OilCityNews-231510-scaled.jpg); 
+  background-position: center; 
+  background-size: cover;
+}
+
+.right-sidebar {
+  height: 500px; 
+  width: 100%; 
+  background-color: white; 
+  border-radius: 22px;
+}
+
+
+
+
+.Font-size {
+  margin-top: 20px; 
+ 
+} 
+.Font-choice {
+  display: flex; 
+  align-items: center; 
+  height: 70px;  
+  width: 100%;
+  border-radius: 22px;
+  background-color: lightgrey; 
+  padding-left: 12px; 
+  padding-right: 12px;
+} 
+
+.customRange1 {
+  background-color: magenta;
+} 
+
+.colour {
+  height: 100px; 
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  gap: 1.5rem; 
+  background-color: lightgrey; 
+  border-radius: 22px; 
+  padding-left: 10px; 
+  padding-right: 10px;
+} 
+.col1 {
+  height: 70px; 
+  width: 70px; 
+  border-radius: 70px; 
+  background-color: mediumslateblue; 
+  cursor: pointer;
+} 
+.col2 {
+  height: 70px; 
+  width: 70px; 
+  border-radius: 70px; 
+  background-color: green;
+}
+
+.col3 {
+  height: 70px; 
+  width: 70px; 
+  border-radius: 70px; 
+  background-color: red;
+}
+
+.col4 {
+  height: 70px; 
+  width: 70px; 
+  border-radius: 70px; 
+  background-color: skyblue;
+} 
+.background {
+  height: 300px; 
+  width: 100%; 
+  display: flex; 
+  gap: 1.5rem;
+}
+
+.bg-light {
+  height: 70px; 
+  width: 150px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 1rem; 
+  cursor: pointer;
+} 
+.activeb {
+  border: 2px solid purple;
+}
+.opt1 {
+  height: 30px; 
+  width: 30px; 
+  border: 1px solid black; 
+  border-radius: 50%; 
+} 
+
+.bg-dim {
+  height: 70px; 
+  width: 150px; 
+  background-color: rgba(0, 0, 0, 0.432);
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 1rem; 
+  cursor: pointer;
+} 
+.opt2 {
+  height: 30px; 
+  width: 30px; 
+  border: 1px solid black; 
+  border-radius: 50%; 
+  
+}
+.bg-dark {
+  height: 70px; 
+  width: 150px; 
+  background-color: rgb(0, 0, 0); 
+  color: white;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 1rem; 
+  cursor: pointer;
+} 
+.opt3 {
+  height: 30px; 
+  width: 30px; 
+  border: 1px solid black; 
+  border-radius: 50%; 
+} 
+
+.tcol1 {
+  background-color: skyblue; 
+  font-family: 'Times New Roman', Times, serif;
+} 
+
+.category { 
+  margin-top: 10px;
+  display: flex; 
+  flex-direction: row; 
+  gap: .5rem; 
+  border: 1px solid black;
+}
